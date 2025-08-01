@@ -1,3 +1,6 @@
+import Navbar from './Navbar'    // ✅ Make sure the path is correct
+import Footer from './Footer'    // ✅ Make sure Footer exists too
+
 export default function Layout({ children }) {
     return (
         <>

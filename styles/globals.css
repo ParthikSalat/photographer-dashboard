@@ -2,7 +2,16 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* white */
+  --foreground: #333333;
+  /* deep gray */
+  --muted: #707070;
+  /* mid-dark gray */
+  --soft: #f0f0f0;
+  /* light gray */
+  --border: #b0b0b0;
+  /* soft border gray */
+  --navbar-bg: #f7f7f7;
 }
 
 @theme inline {
@@ -14,13 +23,41 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #b0b0b0;
+    --foreground: #ffeeee;
+    --muted: #8d7373;
+    --soft: #847c7c;
+    --border: #707070;
+    --navbar-bg: #4a4747;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  @apply font-sans antialiased bg-[var(--background)] text-[var(--foreground)];
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: var(--foreground);
+  @apply font-bold text-[var(--foreground)];
+}
+
+/* Links */
+a {
+  color: var(--muted);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--foreground);
+}
+
+/* Optional base card or section background style */
+.section {
+  @apply bg-[var(--soft)] text-[var(--foreground)] border border-[var(--border)] p-4 rounded-lg;
 }

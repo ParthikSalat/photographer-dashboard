@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
               height={36}
               className="rounded-full"
             />
-            <span className="text-xl font-bold text-gray-800">PhotoDash</span>
+            <span className="text-xl font-bold text-gray-800">The Celestial Wed Story</span>
           </Link>
 
           {/* Desktop Menu */}

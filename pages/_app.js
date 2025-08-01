@@ -46,6 +46,7 @@ export default function App({ Component, pageProps }) {
           <nav className="md:hidden mt-2 flex flex-col items-center gap-3 bg-gray-50 p-4 text-sm text-gray-700">
             <Link href="/" className="hover:underline" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/portfolio" className="hover:underline" onClick={() => setIsOpen(false)}>Portfolio</Link>
+            <Link href="/about" className="hover:underline" onClick={() => setIsOpen(false)}>About</Link>
             <Link href="/contact" className="hover:underline" onClick={() => setIsOpen(false)}>Contact</Link>
           </nav>
         )}

@@ -25,6 +25,7 @@ export default function Nav() {
                 <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-700">
                     <Link href="/">Home</Link>
                     <Link href="/portfolio">Portfolio</Link>
+                    <Link href="/about">About</Link>
                     <Link href="/contact">Contact</Link>
                 </nav>
 
